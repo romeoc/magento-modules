@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <RC_Label>
+            <active>true</active>
+            <codePool>local</codePool>
+        </RC_Label>
+    </modules>
+</config>

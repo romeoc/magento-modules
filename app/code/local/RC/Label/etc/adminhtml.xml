@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <rc_label translate="title" module="rc_label">
+                    <title>Manage Labels</title>
+                    <action>adminhtml/label</action>
+                    <sort_order>10</sort_order>
+                </rc_label>
+            </children>
+        </catalog>
+    </menu>     
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <rc_label>
+                                <title>Manage Labels</title>
+                            </rc_label>
+                        </children>
+                    </catalog>    
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <rc_label>
+                                        <title>Product Labels</title>
+                                    </rc_label>
+                                </children>
+                            </config>
+                        </children>
+                    </system>                     
+                 </children>
+            </admin> 
+        </resources>
+    </acl>
+</config>

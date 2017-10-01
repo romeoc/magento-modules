@@ -1,0 +1,21 @@
+<div class="label-container">
+<?php foreach ($this->getLabels() as $label): ?>
+    <?php $labelData = $this->getLabelData($label); ?>
+    <?php if ($label->frontendValidation() && (bool) $labelData['is_active']): ?>
+    <div class="label <?php echo $labelData['position']; ?>" style="width:<?php echo $labelData['width']; ?>px; height:<?php echo $labelData['height']; ?>px; <?php echo $labelData['position_extra']; ?>" >
+        <div class="label-relative-wrap">
+            <a href="javascript:void(0)" title="<?php echo $label->getName(); ?>"> 
+                <img src="<?php echo $labelData['image']; ?>" 
+                     width="<?php echo $labelData['width']; ?>" 
+                     height="<?php echo $labelData['height']; ?>" 
+                     alt="<?php echo $label->getName(); ?>" 
+                />
+                <span class="label-text" style="<?php echo $labelData['styles']; ?>">
+                    <?php echo $labelData['text']; ?> 
+                </span>
+            </a>
+        </div>
+    </div>
+    <?php endif; ?>
+<?php endforeach; ?>
+</div>

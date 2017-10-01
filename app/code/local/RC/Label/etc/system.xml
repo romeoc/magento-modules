@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <rc translate="label" module="rc_label">
+            <label>RC Labels</label>
+            <sort_order>100</sort_order>
+        </rc>
+    </tabs>
+    <sections>
+        <rc_label translate="label" module="rc_label">
+            <label>General</label>
+            <tab>rc</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="rc_label">
+                    <label>Labels Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <auto_render translate="label">
+                            <label>Render Labels Automatically</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>If you have a custom theme and the labels do not show on the frontend then set this value to "No" and follow the documentation on how to add the labels manually.</comment>
+                        </auto_render>
+                        <default_product_page_width translate="label">
+                            <label>Default Product Page Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If no width is specified when saving a label this width will be used.</comment>
+                        </default_product_page_width>
+                        <default_product_page_height translate="label">
+                            <label>Default Product Page Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If no height is specified when saving a label this height will be used.</comment>
+                        </default_product_page_height>
+                        <default_category_page_width translate="label">
+                            <label>Default Category Page Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If no width is specified when saving a label this width will be used.</comment>
+                        </default_category_page_width>
+                        <default_category_page_height translate="label">
+                            <label>Default Category Page Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>If no height is specified when saving a label this height will be used.</comment>
+                        </default_category_page_height>
+                        <render_multiple translate="label">
+                            <label>Render Multiple Labels</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <comment>If set to "Yes" all labels that match the product will be rendered, otherwise only the first label will be rendered.</comment>
+                        </render_multiple>
+                        <round_method translate="label">
+                            <label>Round Method</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>rc_label/config_source_rounding</source_model>
+                            <comment>The rounding method is used when calculationg discount percentages.</comment>
+                        </round_method>
+                    </fields>
+                </general>
+            </groups>
+        </rc_label>
+    </sections>
+</config>

@@ -1,0 +1,18 @@
+.labels-parent-element, .label-relative-wrap { position: relative; }
+.label-container { position: absolute; top: 0; left: 0; }
+.label-container, .label-relative-wrap {width: 100%; height: 100%; }
+.label-text { position:absolute; top: 50%; left: 0; text-align: center; width: 100%; margin-top: -10px; }
+.label-text:hover { text-decoration: none; }
+.label { background-repeat: no-repeat; position: absolute; }
+
+.label.top-left { top: 0; left: 0; }
+.label.top-center { top: 0; left: 50% }
+.label.top-right { top: 0; right: 0; }
+
+.label.middle-left { top: 50%; left: 0; }
+.label.middle-center { top: 50%; left: 50%; }
+.label.middle-right { top: 50%; right: 0; }
+
+.label.bottom-left { bottom: 0; left: 0; }
+.label.bottom-center { bottom: 0; left: 50%; }
+.label.bottom-right { bottom: 0; right: 0; }
