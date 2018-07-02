@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="RC\Offices\Api\OfficeRepositoryInterface" type="RC\Offices\Model\OfficeRepository"/>
+    <preference for="RC\Offices\Api\Data\OfficeInterface" type="RC\Offices\Model\Office"/>
+    <preference for="RC\Offices\Api\Data\OfficeSearchResultInterface" type="RC\Offices\Model\OfficeSearchResult"/>
+    <virtualType name="RCOfficesOfficeGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="RCOfficesOfficeGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">RC\Offices\Model\ResourceModel\Office\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">RCOfficesOfficeGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <type name="RC\Offices\Model\ResourceModel\Office\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rc_offices</argument>
+            <argument name="eventPrefix" xsi:type="string">rc_offices_office_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">office_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">RC\Offices\Model\ResourceModel\Office</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="rc_offices_office_listing_data_source" xsi:type="string">RC\Offices\Model\ResourceModel\Office\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
+

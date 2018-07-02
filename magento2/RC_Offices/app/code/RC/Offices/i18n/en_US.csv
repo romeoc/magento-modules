@@ -1,0 +1,36 @@
+"Save Office","Save Office"
+"Save and Continue Edit","Save and Continue Edit"
+"Delete Office","Delete Office"
+"Edit Office '%1'","Edit Office '%1'"
+"New Office","New Office"
+"Office Information","Office Information"
+Name,Name
+Description,Description
+Image,Image
+Origin,Origin
+Office,Office
+"The Office has been deleted.","The Office has been deleted."
+"The Office to delete was not found.","The Office to delete was not found."
+Offices,Offices
+"This Office no longer exists.","This Office no longer exists."
+RC,RC
+"Manage Offices","Manage Offices"
+"Please correct the data sent.","Please correct the data sent."
+"Something went wrong while saving your office.","Something went wrong while saving your office."
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"The Office has been saved.","The Office has been saved."
+"Something went wrong while saving the Office.","Something went wrong while saving the Office."
+Europe,Europe
+USA,USA
+Africa,Africa
+Asia,Asia
+"Unable to find office with ID ""%1""","Unable to find office with ID ""%1"""
+Edit,Edit
+Delete,Delete
+"Delete ""${ $.$data.name }""","Delete ""${ $.$data.name }"""
+"Are you sure you wan't to delete the Office ""${ $.$data.name }"" ?","Are you sure you wan't to delete the Office ""${ $.$data.name }"" ?"
+"Additional Information","Additional Information"
+"Add New Office","Add New Office"
+"Delete Offices","Delete Offices"
+"Are you sure you wan't to delete the selected Offices?","Are you sure you wan't to delete the selected Offices?"
+ID,ID

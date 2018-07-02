@@ -1,0 +1,9 @@
+<?php $officeName = $block->getOfficeName(); ?>
+<?php if ($officeName): ?>
+    <tr>
+        <th><?php echo $block->escapeHtml(__('Office')); ?></th>
+        <td><?php echo $officeName; ?></td>
+    </tr>
+<?php endif; ?>
+
+    

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="RC\Offices\Block\Adminhtml\Office\Edit" name="rc_offices_office_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="RC\Offices\Block\Adminhtml\Office\Edit\Tabs" name="rc_offices_office_tabs">
+                <block class="RC\Offices\Block\Adminhtml\Office\Edit\Tab\Office" name="rc_offices_office_edit_tab_office"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">office</argument>
+                    <argument name="block" xsi:type="string">rc_offices_office_edit_tab_office</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

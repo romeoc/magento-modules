@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="RC_Offices::RC" title="RC" module="RC_Offices" sortOrder="1" resource="RC_Offices::RC"/>
+        <add id="RC_Offices::Offices" title="Offices" module="RC_Offices" sortOrder="10" action="rc/office/index" resource="RC_Offices::Offices" parent="RC_Offices::RC"/>
+    </menu>
+</config>

@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DataObject/etc/fieldset.xsd">
+    <scope id="global">
+        <fieldset id="customer_account">
+            <field name="rc_office">
+                <aspect name="to_quote" />
+            </field>
+        </fieldset>
+        <fieldset id="sales_convert_quote">
+            <field name="rc_office">
+                <aspect name="to_order" />
+            </field>
+        </fieldset>
+    </scope>
+</config>
